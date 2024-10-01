@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <title>CSS Specificity</title>
+        <style>
+            .c1{
+                color: blue;
+            }
+            #id1{
+                color: brown;
+            }
+            h1{
+                color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="id1" class="c1" style="color:chartreuse;">KL University</h1>
+    </body>
+</html>
+<!---
+style(inline) > id selector > class selector > element selector > universal selector
+-->

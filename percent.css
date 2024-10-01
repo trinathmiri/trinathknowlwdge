@@ -1,0 +1,25 @@
+.c1{
+    font-size: 2rem;
+}
+.c2{
+    font-size: 3rem;
+}
+.mydiv{
+    font-size: 2rem;
+}
+    .c3{
+        font-size: 1rem;
+    }
+    .percent_cls{
+        width: 400px;
+        height: 250px;
+        border: 1px solid red;
+    }
+    .c4{
+        width: 100%;
+        background-color: #ff000f;
+    }
+    .c5{
+        width:50vw;
+        background-color: #ff00f0;
+    }
