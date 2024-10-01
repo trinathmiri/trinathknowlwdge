@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Paragraph Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .box {
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+        }
+        .box.red {
+            background: linear-gradient(to bottom right, red, black, green);
+        }
+        .box.green {
+            background: linear-gradient(to bottom right, green, black, red);
+        }
+    </style>
+</head>
+<body>
+    <div class="box red">
+        <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Unde quia nulla nam...</p>
+    </div>
+    <div class="box green">
+        <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Unde quia nulla nam...</p>
+    </div>
+    <div class="box red">
+        <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Unde quia nulla nam...</p>
+    </div>
+    <div class="box green">
+        <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Unde quia nulla nam...</p>
+    </div>
+    <div class="box red">
+        <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Unde quia nulla nam...</p>
+    </div>
+    <div class="box green">
+        <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Unde quia nulla nam...</p>
+    </div>
+</body>
+</html>
