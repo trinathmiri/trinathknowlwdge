@@ -1,0 +1,52 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color:color-mix(in srgb-linear, color percentage, color percentage)
+  }
+  
+  .container {
+    height: 500PX;
+    display: flex;
+  }
+  .container__img {
+    padding: 100px;
+    border: 3px solid rgb(255, 40, 40);
+    flex: 3;
+    background-image: url("Untitled-lamb.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .container__text {
+    padding: 10px;
+    flex: 2;
+    border: 2px solid rgb(32, 190, 218);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container__text__1 {
+    font-size: 5vw;
+  }
+  .container__text [class^=container__text__]:not(.container__text__1) {
+    font-size: 2vw;
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      flex-direction: column;
+    }
+    .container__img {
+      border: 2px solid rgb(255, 136, 0);
+    }
+    .container__text {
+      border: 1px solid rgb(218, 32, 178);
+    }
+    .container__text [class^=container__text__]:not(.container__text__1) {
+      display: none;
+    }
+    .container__text__1 {
+      font-size: 5vw;
+    }
+  }/*# sourceMappingURL=rwd1.css.map */

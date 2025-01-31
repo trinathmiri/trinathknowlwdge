@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Layout</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: 
+                "header"
+                "nav"
+                "article"
+                "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto 1fr auto;
+            gap: 10px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #aec;
+            padding: 10px;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #cce;
+            padding: 10px;
+        }
+
+        article {
+            grid-area: article;
+            background-color: #eef;
+            padding: 10px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #cac;
+            padding:10px;    
+        }
+    </style>
+
+</head>
+<body>
+    <header>header area</header>
+
+    <nav>
+        Menu-bar links,
+    </nav>
+</body>

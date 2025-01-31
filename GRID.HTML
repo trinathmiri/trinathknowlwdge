@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Usecases</title>
+        <style>
+            body{
+                padding: 2px;
+                margin: 2px;
+            }
+            .parent{
+                height: 100vh;
+                display: grid;
+                grid-template-rows: 10% 70% 20%;
+                grid-template-columns: 10% 70% 20%;
+            }
+            .header{
+                background-color:chocolate; 
+                grid-column: 1/4;
+                grid-row: 1/2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: rgb(255, 255, 255);
+            }
+            .leftmenu{
+                background-color: lightblue;
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            .main{
+                background-color: brown;
+            }
+            .rightmenu{
+                background-color: lightblue;
+            }
+            .footer{
+                background-color: lightcoral;
+            }
+        </style>
+    </head>
+    <body>
+        <!--parent-->
+        <div class="parent">
+
+            <!-- GRID ITEM1 -->
+            <div class="header">
+                <h1>KL University</h1>
+            </div>
+
+            <!-- GRID ITEM2 -->
+            <div class="leftmenu">LeftMenu</div>
+
+            <!-- GRID ITEM3 -->
+            <div class="main">Main</div>
+
+            <!-- GRID ITEM4 -->
+            <div class="rightmenu">RightMenu</div>
+
+            <!-- GRID ITEM5 -->
+            <div class="footer">Footer</div>
+
+        </div>
+
+    </body>
+</html>

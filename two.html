@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" 
+content="width=device-width, 
+initial-scale=1.0">
+<title>Image Display</title>
+<style>
+body {
+margin: 40;
+padding: 50;
+background-color: burlywood;
+}
+.container {
+display: flex;
+justify-content: center;
+gap: 20px;
+max-width: 1200px; /* Increased container width */
+margin: 0 auto; /* Center the container */
+}
+.item {
+ border: 2px solid #e0e0e0;
+border-radius: 10px;
+ padding: 10px;
+ text-align: center;
+ }
+ img {
+ width: 200px; /* Set a fixed width */
+ height: 200px; /* Set a fixed height */
+ object-fit: cover; /* Ensures the image covers the area without distortion */
+ border-radius: 5px;
+ align-items: baseline;
+ align-items: center;
+ }
+ </style>
+</head>
+<body>
+<div class="container">
+ <div class="item">
+ <h1 class="name"><img src="Untitled.jpg" 
+    alt="Shirt 1"></h1>
+ </div>
+<div class="item">
+ <img src="Untitled1.jpg" alt="Shirt 2">
+</div>
+<div class="item">
+<img src="Untitled-audi.jpg" alt="Shirt 3">
+</div> 
+<div class="item">
+    <img src="Untitled-lamb.jpg" alt="Shirt 4">
+    </div> </div></body></html>

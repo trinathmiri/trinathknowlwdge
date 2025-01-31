@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <title>Pseudo Classes & Pseudo elements </title>
+<head>
+    <title>pseudo classes & pseudo elements</title>
     <style>
-        .cl{
-            list-style-type:none;
-        }
-        .cl li::before{
-            content:"\2713";
-            color:blue;
-            margin-right:5px;
-        }
         input[type="number"]:out-of-range{
             border: 2px solid red;
         }
@@ -21,7 +13,7 @@
             border: 2px solid red;
         }
         input[type="email"]::placeholder{
-           color: #ff0066;
+            color: blue;
         }
         p::first-line{
             text-decoration: underline;
@@ -38,33 +30,47 @@
         }
         p::selection{
             background-color: gray;
-            color:aqua;
+            color: white;
         }
-
-    </style>
+        li::marker{
+            color: red;
+        }
         
-    
-    </head>
-    <body>
-        <input type="number" placeholder="enter age" min="0" max="18" style="width: 500px;">
-        <br></br>
-        <input type="email" placeholder="enter email">
-        <br></br>
-        <p>
-            Many novice writers tend to make a sharp distinction between content and style, thinking that a paper can be strong in one and weak in the other, but focusing on organization shows how content and style converge in deliberative academic writing. Your professors will view even the most elegant prose as rambling and tedious if there isn’t a careful, coherent argument to give the text meaning. Paragraphs are the “stuff ” of academic writing and, thus, worth our attention here.
-
-Key Sentences (a.k.a. Topic Sentences)
-        </p>
-        <ul>
-            <li>KL University Hyderabad</li>
-            <li>PFSD</li>
-            <li>FDP</li>
-        </ul>
-        <ul class="cl">
-            <li>KL University Hyderabad</li>
-            <li>PFSD</li>
-            <li>FDP</li>
-            <li>Day1</li>
-        </ul>
-    </body>
+        
+        .c1{
+            list-style-type: none;
+        }
+        .c1 li::after{
+            content: "\2713";
+            color: red;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" 
+    placeholder="enter age" 
+    min=0 max=12 style="width: 250px;">
+    <br><br>
+    <input type="email" placeholder="enter 
+    email address">
+    <br><br>
+    <p>
+        dicta, similique sit illo, autem laudantium dolore! Illo ratione consectetur explicabo facere veniam distinctio doloremque, qui voluptas perspiciatis porro. Quidem, suscipit aspernatur facilis, similique error, ipsam commodi accusantium amet debitis libero magni porro vel. Praesentium inventore exercitationem facere tempore veniam suscipit excepturi asperiores quidem? Inventore vel, in placeat ducimus dolor assumenda id rem pariatur dolorum praesentium doloribus aliquid sint mollitia. Numquam sequi illo exercitationem vitae voluptates.
+    </p>
+    <ul>
+        <li>KLU</li>
+        <li>ExcelR</li>
+        <li>FSD</li>
+        <li>DevOps</li>
+        <li>CI/CD Pipeline</li>
+    </ul>
+    <ul class="c1">
+        <li>KLU</li>
+        <li>ExcelR</li>
+        <li>FSD</li>
+        <li>DevOps</li>
+        <li>CI/CD Pipeline</li>
+    </ul>
+</body>
 </html>
